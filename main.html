@@ -9,6 +9,9 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
+			 if (arr.length <= 1 || new Set(arr).size === 1) {
+		        return -Infinity;
+		    }
 			//Write your code here
 			let max=-Infinity;
 			let sMax=-Infinty;
